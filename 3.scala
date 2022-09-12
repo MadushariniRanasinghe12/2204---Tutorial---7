@@ -16,10 +16,10 @@ object Q3 extends App{
 }
 
 class Account(a:String, b:Int, c:Double){
-    val Nic:String=a
-    val AcNo:Int=b;
+    val NIC:String=a
+    val AccNo:Int=b;
     var Balance:Double=c;
-    override def toString ="["+Nic+":"+AcNo +":"+ Balance+"]"
+    override def toString ="["+NIC+":"+AccNo +":"+ Balance+"]"
 
     def withdraw(transfer_amount:Double)=this.Balance-transfer_amount;
     def deposit(transfer_amount:Double)=this.Balance+transfer_amount;
