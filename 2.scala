@@ -13,8 +13,8 @@ class Rational(n:Int, d:Int) {
     def numer = n
     def denom = d
     def neg = new Rational(-this.numer, this.denom)
-    def add(r:Rational) = new Rational(this.numer*r.denom + this.denom*r.numer, this.denom*r.denom)
-    def -(r:Rational) = this.add(r.neg)
+    def -(r:Rational) = new Rational(this.numer*r.denom - this.denom*r.numer, this.denom*r.denom)
+    
 
     override def toString(): String = numer + "/" + denom
 }
